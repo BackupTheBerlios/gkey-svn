@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<!DOCTYPE gkey SYSTEM "gkey.dtd">
+
+<!-- The root element is gkey -->
+<gkey>
+  <key value="F1">
+    <action name="Activate">
+      <window>
+        <property name="res_name" value="alpha"/>
+      </window>
+    </action>
+    <action name="MoveMouse">
+      <window>
+        <property name="res_name" value="alpha"/>
+      </window>
+      <property name="X" value="500"/>
+      <property name="Y" value="100"/>
+    </action>
+  </key>
+  <key value="F2">
+    <action name="Activate">
+      <window>
+        <property name="res_name" value="beta"/>
+      </window>
+    </action>
+    <action name="MoveMouse">
+      <window>
+        <property name="res_name" value="beta"/>
+      </window>
+      <property name="X" value="500"/>
+      <property name="Y" value="100"/>
+    </action>
+  </key>
+  <key value="F3">
+    <action name="Activate">
+      <window>
+        <property name="res_name" value="gamma"/>
+      </window>
+    </action>
+    <action name="MoveMouse">
+      <window>
+        <property name="res_name" value="gamma"/>
+      </window>
+      <property name="X" value="500"/>
+      <property name="Y" value="100"/>
+    </action>
+  </key>
+  <key value="F4">
+    <action name="Activate">
+      <window>
+        <property name="res_name" value="delta"/>
+      </window>
+    </action>
+    <action name="MoveMouse">
+      <window>
+        <property name="res_name" value="delta"/>
+      </window>
+      <property name="X" value="500"/>
+      <property name="Y" value="100"/>
+    </action>
+  </key>
+  <key value="<Shift>F9">
+    <action name="Activate">
+      <window>
+        <property name="res_name" value="epiphany"/>
+      </window>
+    </action>
+    <action name="MoveMouse">
+      <window>
+        <property name="res_name" value="epiphany"/>
+      </window>
+      <property name="X" value="500"/>
+      <property name="Y" value="100"/>
+    </action>
+  </key>
+</gkey>

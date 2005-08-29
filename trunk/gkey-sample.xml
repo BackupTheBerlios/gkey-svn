@@ -1,17 +1,29 @@
 <?xml version="1.0"?>
 <!DOCTYPE gkey SYSTEM "gkey.dtd">
 
-<!-- The root element is gkey -->
+<!--
+This is my config, I have 4 gnome-terminals each with a different X class:
+# gnome-terminal --class=alpha &
+# gnome-terminal --class=beta &
+# gnome-terminal --class=gamma &
+# gnome-terminal --class=delta &
+
+The following configuration allows me to jump from one term to another using
+F[0-4] keys.
+F5 jumps to epiphany window.
+
+As of now, behavior is unknown if several windows have the same class name.
+-->
 <gkey>
   <key value="F1">
     <action name="Activate">
       <window>
-        <property name="res_name" value="alpha"/>
+        <property name="res_class" value="alpha"/>
       </window>
     </action>
     <action name="MoveMouse">
       <window>
-        <property name="res_name" value="alpha"/>
+        <property name="res_class" value="alpha"/>
       </window>
       <property name="X" value="500"/>
       <property name="Y" value="100"/>
@@ -20,12 +32,12 @@
   <key value="F2">
     <action name="Activate">
       <window>
-        <property name="res_name" value="beta"/>
+        <property name="res_class" value="beta"/>
       </window>
     </action>
     <action name="MoveMouse">
       <window>
-        <property name="res_name" value="beta"/>
+        <property name="res_class" value="beta"/>
       </window>
       <property name="X" value="500"/>
       <property name="Y" value="100"/>
@@ -34,12 +46,12 @@
   <key value="F3">
     <action name="Activate">
       <window>
-        <property name="res_name" value="gamma"/>
+        <property name="res_class" value="gamma"/>
       </window>
     </action>
     <action name="MoveMouse">
       <window>
-        <property name="res_name" value="gamma"/>
+        <property name="res_class" value="gamma"/>
       </window>
       <property name="X" value="500"/>
       <property name="Y" value="100"/>
@@ -48,12 +60,12 @@
   <key value="F4">
     <action name="Activate">
       <window>
-        <property name="res_name" value="delta"/>
+        <property name="res_class" value="delta"/>
       </window>
     </action>
     <action name="MoveMouse">
       <window>
-        <property name="res_name" value="delta"/>
+        <property name="res_class" value="delta"/>
       </window>
       <property name="X" value="500"/>
       <property name="Y" value="100"/>
@@ -62,12 +74,12 @@
   <key value="<Shift>F9">
     <action name="Activate">
       <window>
-        <property name="res_name" value="epiphany"/>
+        <property name="res_class" value="epiphany"/>
       </window>
     </action>
     <action name="MoveMouse">
       <window>
-        <property name="res_name" value="epiphany"/>
+        <property name="res_class" value="epiphany"/>
       </window>
       <property name="X" value="500"/>
       <property name="Y" value="100"/>
